@@ -5,8 +5,6 @@ let reset1=document.getElementById("reset2");
 let score=0;
 let score1=0;
 
-
-
 function add1() {
 
     score+=1;
