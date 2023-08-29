@@ -4,7 +4,8 @@ let reset=document.getElementById("reset");
 let reset1=document.getElementById("reset2");
 let score=0;
 let score1=0;
-
+let allreset=document.getElementById("reset")
+let game=document.getElementById("random")
 function add1() {
 
     score+=1;
@@ -45,11 +46,62 @@ function add6() {
     res2.innerText=score1;
     console.log(score1)
 }
+
 function result() {
 res2.innerHTML=""
 res2.innerText=0;
 score1=0;
 }
+
+
+
+
+game.addEventListener("click",function(){
+    startGame()
+})
+
+const startGame = () =>{
+const rand = {
+    nums:Math.floor(Math.random()*3)+1 , 
+    secondNum:Math.floor(Math.random()*3)+1
+   };
+console.log(rand.nums,rand.secondNum)
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 console.log("2" + 2) //2 and 2
 console.log(11 + 7) //18
 console.log(6 + "5") //6 5
